@@ -1,0 +1,80 @@
+# Summary
+
+## Tình huống
+
+1.  Ứng Dụng: GrabMart
+    - Chương trình khuyến mãi: Cross-sell mega promo (chương trình khuyến mãi chéo quy mô lớn)
+    - Khoảng tgian thi triển: 6 tuần
+    - Địa diểm: Thành Phố Hồ Chí Minh
+    - Trạng Thái: thí điểm
+
+2. Merchanism:
+    Khi đặt đơn hàng trên `GrabFood`:
+    constraints:
+        - tổng giá trị > 100.000 vnđ -> nhận voucher trị giá 50.000 vnđ cho `GrabMart` tiếp theo
+
+3. Output - Backlog Test:
+    - Tổng giá trị giao dịch (GMV):
+        + GrabMart và GrabFood: tổng tăng hơn 45% (so với ?)
+
+4. Deployment:
+    - Triển khai chính thức tại Hà Nội (với ngân sách khủng)
+
+5. Work-to-do: đưa ra đánh giá -- và phân tích răng có hợp lí để deploy ở Hà Nội không ?
+    Tình huống:
+        Giám đốc Quốc gia tin rằng chiến dịch này đã thành công trong việc thay đổi hành vi người dùng và hình thành thói quen sử dụng đa dịch vụ.
+
+    Câu hỏi:
+        - Dựa trên dữ liệu chuyên sâu về hành vi và kết quả kinh doanh (P&L), bạn có đồng ý với nhận định này không?
+        - Yếu tố thực sự nào đang thúc đẩy mức tăng trưởng 45% đó? 
+        - Hãy xây dựng lập luận dựa trên dữ liệu và đưa ra khuyến nghị cuối cùng về việc có nên mở rộng chương trình này sang Hà Nội hay không 
+
+## Metadata-understanding
+
+1. Data ranges:
+    
+    Period:
+        - Tuần 1-6: Trước khi run promo
+        - Tuần 7-12: Trong giai đoạn promo (duration 6 weeks)
+        - Tuần 13-14: Sau promo (Đã kết thúc) 
+
+    dataset:
+        user: (incl: first-used)
+        merchant: (incl interest-rate)
+        transaction: (date + week_number = seasoning)
+        weather_daily: 
+
+2. Logic:
+    2.1. new-existing `Mart` users activated during promo
+        **New Mart User:** `first_mart_order_date` >= '2024-02-12'
+        **Existing Mart User:** ELSE
+        Condition:
+            - City: Ho Chi Minh City
+            - Period: Promo
+            - Service-type: GrabMart
+
+    2.2.
+## Init Solution:
+Approach for all (if can):
+1. Counter Factor Analysis (Co-efficient and Co-variance)
+2. Difference in Differences
+
+Approach for Q1:
+- Dựa trên dữ liệu chuyên sâu về hành vi và kết quả kinh doanh (P&L), bạn có đồng ý với nhận định này không?
+
+1. Hành vi:
+    - how user_segment is divided ?
+        - Regular: 
+        - Voucher Hunter: how to mark
+        - High Value
+        - Occasional
+
+    trước-promo:
+
+    đang-promo:
+
+    sau-promo:
+2. Kết quả kinh doanh (P&L):
+
+
+    
