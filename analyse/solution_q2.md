@@ -18,4 +18,4 @@ This incentive-driven behavior completely eroded unit economics, rendering the g
 | **GrabMart CM** | -655,422,800 VND | Heavy subsidy burden (50K voucher cost per order). |
 | **Net CM Impact** | **-506,074,700 VND** | **Value-destroying growth.** |
 
-The campaign successfully stimulated top-line transactions, but the incremental volume came at a severe margin cost. We are paying a heavy premium to teach existing users how to operate inefficiently on our platform, directly cannibalizing a previously profitable ecosystem to buy short-term, empty GMV.
+The campaign successfully stimulated top-line transactions, but the incremental volume came at a severe margin cost. We are paying a heavy premium to teach existing users how to operate inefficiently on our platform, directly cannibalizing a previously profitable ecosystem to buy short-term, empty GMV
