@@ -1,4 +1,4 @@
-## Q1. Bạn có đồng ý với nhận định của Country Head không?
+## Q1. Based on deep behavioural and P&L data, do you agree?
 
 **Direct Answer: I do not agree with the Country Head's assessment.**
 
