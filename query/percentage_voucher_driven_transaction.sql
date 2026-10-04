@@ -1,5 +1,5 @@
 SELECT
-SUM(item_subtotal) AS total_mart_gmv,
+SUM(item_subtotal) AS E,
 
 SUM(
     CASE
